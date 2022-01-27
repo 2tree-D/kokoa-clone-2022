@@ -1,0 +1,47 @@
+<!-- 02.png 의 html / 왜 인덱스이냐면 대부분의 웹서버가 디폴트로 인덱스html을 찾아보도록 설정되어있어 -->
+<!DOCTYPE html>
+<!--  / 이거 자동불러오려면 '! + enter 키 하면 자동완성..ㅎ' -->
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoatalk</title>
+  </head>
+  <body>
+    <div class="status-bar status-bar--orange">
+      <div class="status-bar__column">
+        <span>No Servicd</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-2x"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h2 class="welcome-header__title">Welcome to Kokoa clone</h2>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone numver.
+      </p>
+    </header>
+
+    <form id="login-form">
+      <inout tyoe="text" aria-placeholder="Email or phone number" />
+      <input type="password" placeholder="password" />
+      <input type="suvmit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/fc8f8037cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

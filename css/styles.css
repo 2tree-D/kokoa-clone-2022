@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+body {
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  /* 폰트패밀리의 옵션 폰트임 */
+  font-family: "Open Sans", sans-serif; 
+   /*구글에서 google fonts 검색하면 폰트 받을수 잇는데 원하는거 고르고 '+select this style' 누른다음 우특에 열리는 selested family 열린거 보면 
+   <link>는 html에 링크 복붙하는거고 @import는 맨 상단에 복붙하고 그아래 css rules.. 애 았는거 복붙해서 패밀리폰트로 설정하면됨 ( css애 추가하는걸 더 추천  */
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+------
+
+css hack : 이상한데 어떤이유인지..작동해서.. 사람들이공유함 ㅋ
+-> 지금 시계가 정가운데에 잇지 않은데 justify-content말고 다른방법으로 가운데 오게 해볼거임
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+body {
+  font-family: "Open Sans", sans-serif; 
+}
+
+.status-bar {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column{
+    width: 33%; /*  / 한 다음, 시계자식을 중아에 오게 할거임 */
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2){
+    display: flex;
+    justify-content: center;
+}
+.status-bar__column:last-child{ /* / 한 다음, 시계자식을 중아에 오게 할거임 */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* 그리고 배터리와 충젘표시에 공간줄거임 */
+.status-bar__column .fa-battery-full{
+    margin: 0px 5px;
+}

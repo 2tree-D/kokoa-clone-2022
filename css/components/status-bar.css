@@ -1,0 +1,28 @@
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+}
+.status-bar__column {
+  width: 33%; /*  / 한 다음, 시계자식을 중아에 오게 할거임 */
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  /* / 한 다음, 시계자식을 중아에 오게 할거임 */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* 그리고 배터리와 충젘표시에 공간줄거임 */
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}

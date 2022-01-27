@@ -1,0 +1,20 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9fa;
+  padding: 20px 50px;
+  box-sizing: border-box; /* 패딩이 오버사이징되서 마지막 점3개가 없어져서 이 기능으로 보더박스 안에 맞게끔 설정한거 */
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+/* a {
+  color: inherit;
+  text-decoration: none;
+/* } */ /*   --> reset.css에 추가해둠 */
+.nav__link {
+  color: #2e363e;
+}

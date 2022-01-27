@@ -1,0 +1,19 @@
+/* **파일의 순서가 중요! ex) @import "variable.css"; 가 더 아래에 있다면 적용안될거임 */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css"; /* @import "reset.css"; ':'세미콜론 잊지말것! */
+@import "variable.css";
+
+/* components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+
+/*screens */
+@import "screens/login.css";
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 1000vh;
+/* 모든 화면에 적용하기 때문에 여기에 써놓는 편이심 선생님은 */
