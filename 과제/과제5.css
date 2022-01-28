@@ -1,0 +1,108 @@
+header {
+  border: 3px solid aquamarine;
+  width: 450px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+section {
+  width: 310px;
+  display: flex;
+  align-items: center;
+}
+div {
+  width: 70px;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.box {
+  margin-left: 30px;
+}
+/* 최상단 */
+.up {
+  justify-content: center;
+}
+.up__column {
+  width: 40%;
+}
+.up__column:last-child {
+  display: flex;
+  justify-content: center;
+}
+/* 상단*/
+.main__yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-image {
+  color: white;
+}
+/* 중간 */
+.button {
+  width: 450px;
+  justify-content: space-evenly;
+}
+.fa-play {
+  margin: 10px;
+}
+.button__m {
+  border-width: 2px 2px 7px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button__playbox {
+  width: 200px;
+}
+.button__circle {
+  border-radius: 50%;
+}
+
+/* 밑에섹션 */
+.main__yellow {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(255, 209, 4);
+}
+.first__red {
+  background-color: tomato;
+}
+.second__pink {
+  background-color: rgb(255, 160, 192);
+}
+.third__blue {
+  background-color: rgb(70, 113, 241);
+}
+.fourth__mint {
+  background-color: rgb(39, 216, 207);
+}
+/* 글씨체 */
+ul {
+  list-style: none;
+  position: relative;
+  left: -20px;
+  line-height: 30px;
+}
+.song-name {
+  font-size: 18pt;
+  font-weight: bold;
+}
+.song-t {
+  font-size: 10pt;
+  color: gray;
+}
+.song-m {
+  font-size: 40px;
+  font-weight: bold;
+}
+.main {
+  width: 435px;
+}
+.song-n {
+  font-size: 17px;
+  font-weight: bold;
+}

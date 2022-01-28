@@ -1,0 +1,157 @@
+body {
+  height: 120vh;
+}
+section {
+  display: flex;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+section:not([class="status-bar"]),
+h1 {
+  margin: 20px;
+}
+img {
+  width: 180px;
+  height: 250px;
+  border-radius: 20px;
+}
+p {
+  color: #d3d3d3;
+}
+
+/* 상태바 */
+.status-bar {
+  background-color: #ffce32;
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.status-bar__icon {
+  margin: 20px;
+}
+
+/* search */
+.search {
+  width: 460px;
+  height: 70px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  position: relative;
+  top: -50px;
+  box-shadow: 0px 2px 4px #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search__lettr {
+  margin-left: 40px;
+}
+.fa-search {
+  color: #d3d3d3;
+  margin-right: 20px;
+}
+header {
+  position: relative;
+  top: -25px;
+}
+/* top */
+.top__pic {
+  width: 180px;
+  height: 250px;
+  border-radius: 10%;
+  background-color: blue;
+}
+li {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.btn__gray {
+  margin: 15px 15px 15px 0px;
+  border-radius: 6px;
+  width: 100px;
+  height: 30px;
+  background-color: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__yellow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ffce32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.btn__brown {
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* mid */
+.mid {
+  width: 500px;
+  white-space: nowrap; /* 아으아ㅣ */
+  overflow-x: scroll;
+}
+.mid__adv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mid__pic {
+  width: 110px;
+  height: 170px;
+  background-color: aqua;
+  border-radius: 10%;
+  margin: 10px;
+}
+
+.star {
+  color: #ffce32;
+  list-style: none;
+}
+.star__gray {
+  color: #ededed;
+}
+.mid__book {
+  width: 110px;
+  height: 170px;
+  border-radius: 10%;
+}
+
+/* bot */
+.bot__p {
+  width: 230px;
+}
+.bot__pic {
+  width: 180px;
+  height: 190px;
+  border-radius: 10%;
+  background-color: blue;
+  margin-right: 50px;
+}
+
+.bot__h2 {
+  margin: 0px;
+}
+
+.bot__person {
+  width: 180px;
+  height: 190px;
+  border-radius: 10%;
+}

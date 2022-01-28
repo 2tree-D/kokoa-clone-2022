@@ -1,0 +1,26 @@
+html {
+  background-color: tomato;
+}
+body {
+  width: 350px;
+  margin: 180px;
+  padding: 20px;
+  background-color: moccasin;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+div {
+  height: 60px;
+  width: 60px;
+  background-color: teal;
+  padding: 4px;
+  border-style: solid;
+  border-color: white;
+  margin: 20px;
+}
+#second {
+  width: 250px;
+  border-style: dashed;
+}
