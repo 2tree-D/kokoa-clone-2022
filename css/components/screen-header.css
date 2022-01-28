@@ -1,0 +1,19 @@
+/* 페이지 마다 header부분 간격이나 크기 이런부분 같아서 여기저기 가져다 쓰고 icon만 바꾸면 됨 */
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* 니코쌤강의와 달리 statys-bar랑 header간격이 떨어져있찌 않고 겹쳐보이는 이유는
+  status-bar가  fixed되어있기 떄문...ㄷ 쌤이 한번해봐~ 햇기 떄문에 썜은 안한것으로 추정,,,
+  fixed를 삭제하거나, paddinf값을 좀더 넣어줘함~s */
+  padding: var(--horizontal-space);
+  padding-top: 40px;
+  /* opacity: 90%; */ /* 개인취향ㅎ */
+}
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+.screen-header__icon span {
+  margin-left: 25px;
+}

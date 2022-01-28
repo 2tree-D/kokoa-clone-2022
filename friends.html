@@ -21,7 +21,66 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+<!-- header -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icon">
+        <span>
+          <i class="fas fa-search fa-lg"></i>
+        </span>
+        <span>
+          <i class="fas fa-music fa-lg"></i>
+        </span>
+        <span>
+          <i class="fas fa-cog fa-lg"></i>
+        </span>
+      </div>
+    </header>
 
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+<!-- user -->
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <!-- .user-component__column*2 하고 enter치면 자동완성~~!~ -->
+        <div class="user-component__column">
+          <img src="tree.jpg" class="user-component__avatar user-component__avatar--xl" />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Seoyeon Kim</h4>
+            <!-- <h6 class="user-cpmponent__subtitle">this text whatever</h6> -->
+            <!--  ㄴ 지금 화면에서는 subtitle없지만 다른 화면에 가져다 쓰기 위해서 만들어두는거! 사진 크기도 다른화면에 중간사이즈 있어서 그걸 기준으로 맞췄고, 사진 크기 변경하는 방법이 있음 -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>  
+      <div class="friends-screen__channel">
+        <div class="friends-screen__chnnel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <!-- .user-component__column*2 하고 enter치면 자동완성~~!~ -->
+          <div class="user-component__column">
+            <img src="과제/책/mm.png" class="user-component__avatar user-component__avatar--sm" />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>  
+  
+      </div>
+    </main>
+
+
+    <!-- 하단바 -->
     <nav class="nav">
       <!-- nav>ul>li>*4>a 쓰고 enter치면 자동완성!~@!! 하면 바로 하단에 # 써둔곳에 커서 깜박이는데
 거기에 입력하고 'tab'키 누르면 지금 Friends 입력한곳에 커서가고 또 입력하고 'tab'키 누르면 다음줄 # 칸으로 커서 움직임...개빡취게 이제서야 알려주다니..-->
@@ -31,13 +90,19 @@
         </li>
         <!-- # - 나중에 다른 링크 작업후 집어넣으면 클릭하면 거기로 이동함 -->
         <li class="nav__btn">
-          <a class="nav__link" href="#"><i class="far fa-comment fa-2x"></i></a>
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
         </li>
         <li class="nav__btn">
-            <a class="nav__link" href="#"><i class="fas fa-ellipsis-h fa-2x"></i></a>
+            <a class="nav__link" href="#">
+              <span class="nav__notification notification2"></span>
+              <i class="fas fa-ellipsis-h fa-2x"></i>
+            </a>
         </li>
       </ul>
     </nav>

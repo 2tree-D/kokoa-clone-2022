@@ -4,7 +4,10 @@
   width: 100%;
   background-color: #f9f9fa;
   padding: 20px 50px;
-  box-sizing: border-box; /* 패딩이 오버사이징되서 마지막 점3개가 없어져서 이 기능으로 보더박스 안에 맞게끔 설정한거 */
+  box-sizing: border-box; /* 패딩이 오버사이징되서 마지막 점3개가 없어져서 이 기능으로 보더박스 안에 맞게끔 설정한거
+  기본적으로 박스크기를 만약 width를 200px로 지정하고, padding을 50px 주면 박스크기는 200이되는게 아니라 250px이되버림..
+  그럴때 이 box-sizing을쓰면 css에게 "내가 paddinf을 줘도 신경쓰지마. 내 box 사이즈를 늘리지 말아줘"라고 하는거임
+  그럼 글 쓰는 공간은 150px 이 되는거 */
   border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
 .nav__list {
@@ -17,4 +20,27 @@
 /* } */ /*   --> reset.css에 추가해둠 */
 .nav__link {
   color: #2e363e;
+  position: relative;
+}
+
+.nav__notification {
+  background-color: tomato;
+  width: 30px;
+  height: 30px; /* 이렇게 크기 지정해도 적용이 안되는데 'span'이라서 그럼, 블럭처리해줘야함 */
+  /* display: block; 근데 이게 있으면 플렉스박스가 적용안되어 지워줘야함 */
+  border-radius: 15px; /* (퍼센트로 하려면 50%, px로 하려면 크기의 절만크기로) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute; /* 가장가까운 부모 기준으로 움직여서 부모에 렐레티브설정해줘야함 */
+  left: 15px;
+  bottom: 15px;
+}
+.notification2 {
+  width: 7px;
+  height: 7px;
+  top: -10px;
+  left: 30px;
 }
