@@ -21,3 +21,7 @@ body {
   height: 1000vh;
 }
 /* 모든 화면에 적용하기 때문에 여기에 써놓는 편이심 선생님은 */
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
