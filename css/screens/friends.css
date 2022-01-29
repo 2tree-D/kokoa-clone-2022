@@ -5,7 +5,7 @@
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 10px;
-  margin-top: -15px;
+  margin-top: -15px; /* screen-header에 margin-borrom을 추가한게 있어서 friedns스크린에서는 이상해보여서 추가함 */
 }
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);

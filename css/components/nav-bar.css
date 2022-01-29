@@ -24,23 +24,23 @@
 }
 
 .nav__notification {
-  background-color: tomato;
-  width: 30px;
-  height: 30px; /* 이렇게 크기 지정해도 적용이 안되는데 'span'이라서 그럼, 블럭처리해줘야함 */
+  /*background-color: tomato;
+  width: 22px;
+  height: 22px; /* 이렇게 크기 지정해도 적용이 안되는데 'span'이라서 그럼, 블럭처리해줘야함 */
   /* display: block; 근데 이게 있으면 플렉스박스가 적용안되어 지워줘야함 */
-  border-radius: 15px; /* (퍼센트로 하려면 50%, px로 하려면 크기의 절만크기로) */
-  display: flex;
+  /* border-radius: 15px; /* (퍼센트로 하려면 50%, px로 하려면 크기의 절만크기로) */
+  /*  display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-weight: 600;
+  font-weight: 600;*/
+  /* 여기 까지 주석인 이유는 : chats스크린의  시간아래에 있는 빨간 동그라미랑 동일해서 css따로 묶어주려고 badge.css에 가져다 놓음 */
+
   position: absolute; /* 가장가까운 부모 기준으로 움직여서 부모에 렐레티브설정해줘야함 */
-  left: 15px;
-  bottom: 15px;
+  left: 20px;
+  bottom: 17px;
 }
 .notification2 {
-  width: 7px;
-  height: 7px;
   top: -10px;
   left: 30px;
 }
