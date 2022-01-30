@@ -16,11 +16,12 @@
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
+@import "screens/more.css";
 
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
-  height: 1000vh;
+  height: 150vh;
 }
 /* 모든 화면에 적용하기 때문에 여기에 써놓는 편이심 선생님은 */
 
