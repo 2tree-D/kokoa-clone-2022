@@ -1,0 +1,15 @@
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-row__icon {
+  display: flex;
+  flex-direction: column; /*row는 행으로, 옆으로 정렬됨  */
+  align-items: center;
+}
+.icon-row__icon i {
+  font-size: 35px; /* 아이콘을 폰트사이즈로 크기 바꿀수 있음 ㅋㅋ    */
+}
+.icon-row__icon span {
+  margin-top: 15px;
+}

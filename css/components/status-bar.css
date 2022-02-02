@@ -10,23 +10,40 @@
   margin-right: 5px;
 }
 .status-bar__column {
-  width: 33%; /*  / 한 다음, 시계자식을 중아에 오게 할거임 */
+  width: 33%;
 }
 
+/* --------------------- */
+.status-bar__column:first-child {
+  margin-right: auto;
+}
+.status-bar__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.status-bar__column:nth-child(2) {
+  text-align: center;
+}
+/* 그리고 배터리와 충젘표시에 공간줄거임 */
+/* ----------------------------------- */
+/* 이방법은 나중에 alt-header 쪽에서 알려준 방법으로 한거고, 원래는
+.status-bar__column {
+  width: 33%; 
+}
 .status-bar__column:nth-child(2) {
   display: flex;
   justify-content: center;
 }
 .status-bar__column:last-child {
-  /* / 한 다음, 시계자식을 중아에 오게 할거임 */
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-/* 그리고 배터리와 충젘표시에 공간줄거임 */
+이 방법 이였음......뭐로 해야 하는건지..참  r정식방법 아니고 핵임,.*/
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
 }
 .fa-bolt {
-  margin-right: 5px;
+  margin-right: 15px;
 }

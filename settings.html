@@ -22,13 +22,17 @@
       </div>
     </div>
 <!-- header -->
-    <header class="screen-header">
+    <header class="alt-header screen-header">
+      <div class="alt-header__column">
+        <a href="more.html">
         <i class="fas fa-chevron-left fa-lg"></i>
-      <h1 class="screen-header__title">Settings</h1>
-      <div class="screen-header__icon">
-        <span>
+      </a>
+      </div>
+      <div class="alt-header__column">
+      <h1 class="setting-title screen-header__title">Settings</h1>
+      </div> 
+      <div class="alt-header__column screen-header__icon">
           <i class="fas fa-search fa-lg"></i>
-        </span>
       </div>
     </header>
 
@@ -36,16 +40,94 @@
 <!-- user -->
 
     <main class="main-screen">
-
-
-  
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-bullhorn"></i>
+            <span>Notices</span>
+          </div>
+          <div class="settings__setting-column"></div> <!-- 내용이 없어도 이렇게 써줘야 setting.css에서 설정한 라스트차일드에 대한 opacity가 위에 적용 안됨 -->
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-flask"></i> 
+            <span>Kokoa Lab</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting none">
+          <div class="settings__setting-column">
+            <i class="fas fa-info-circle"></i>
+            <span>Version</span>
+          </div>
+          <div class="settings__setting-column">Latest Version</div>
+        </li>
+      </ul>
     </main>
 
-    <div class="line">
-        <div class="line__header">
-        </div>
-  
-      </div>
+    <div class="lin-set line">
+    </div>
+
+    <main class="main-screen">
+      <ul class="settings-list">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-user-shield"></i>
+            <span>Privacy</span>
+          </div>
+          <div class="settings__setting-column"></div> <!-- 내용이 없어도 이렇게 써줘야 setting.css에서 설정한 라스트차일드에 대한 opacity가 위에 적용 안됨 -->
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="far fa-bell"></i> 
+            <span>Notifications</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="far fa-user"></i> 
+            <span>Friends</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="far fa-comment"></i>
+            <span>Chats</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-adjust"></i>
+            <span>Dispay</span>
+            <span class="badge">N</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-brush"></i>
+            <span>Themes</span>
+            <span class="badge">N</span>
+          </div>
+          <div class="settings__setting-column">Default themes</div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-phone-alt"></i>
+            <span>Call</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+
+
+
+      </ul>
+    </main>
+
+
 
 
     <!-- 하단바 -->

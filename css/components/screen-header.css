@@ -7,7 +7,7 @@
   status-bar가  fixed되어있기 떄문...ㄷ 쌤이 한번해봐~ 햇기 떄문에 썜은 안한것으로 추정,,,
   fixed를 삭제하거나, paddinf값을 좀더 넣어줘함~s */
   padding: var(--horizontal-space);
-  padding-top: 40px;
+  padding-top: 50px;
   margin-bottom: 15px;
   /* opacity: 90%; */ /* 개인취향ㅎ */
 }

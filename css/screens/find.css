@@ -5,21 +5,6 @@
   width: 5px;
   height: 5px;
 }
-.find-icons {
-  display: flex;
-  justify-content: space-between;
-}
-.find-icons__icon {
-  display: flex;
-  flex-direction: column; /*row는 행으로, 옆으로 정렬됨  */
-  align-items: center;
-}
-.find-icons__icon i {
-  font-size: 35px; /* 아이콘을 폰트사이즈로 크기 바꿀수 있음 ㅋㅋ    */
-}
-.find-icons__icon span {
-  margin-top: 15px;
-}
 
 .Recommended-friends span {
   margin: 110px 0px;
@@ -89,8 +74,7 @@
   width: 60px;
   height: 25px;
   color: white;
-  background-color: black;
-  opacity: 0.4;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   position: absolute;
   bottom: 7px;
@@ -98,4 +82,5 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 12px;
 }
