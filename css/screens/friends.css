@@ -29,7 +29,7 @@
 
 #splash-screen {
   background-color: var(--yellow);
-  position: absolute;
+  position: absolute; /* 모든걸 가리고 있음, 애니메이션으로 사라지게 할거임*/
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -37,4 +37,19 @@
   justify-content: center;
   align-items: center;
   font-size: 120px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  /* 이렇게하면 없어지긴 하는데,  애니메이션이 끝나면 다시 처음으로 돌아감 */
+  /*  forwards를 적어야 애니메이션의 마지막 keyframe을 기억하고 유지함 
+  근데 chats 아이콘 클릭하려고 하면 아직 element가 남아 있기 때문에 클릭이 안됨...
+  visibility: hidden; 으로 마우스에 걸리지 않게 빠지게 해야함*/
+  animation-delay: 2s;
+}
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden; /* 마우스에 걸리지 않게 빠져버림, but아직 html에 남아있어 제거하고 싶으면 JavaScript가 필요함 */
+  }
 }
