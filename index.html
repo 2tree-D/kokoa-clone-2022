@@ -1,103 +1,15 @@
-<!-- 02.png 의 html / 왜 인덱스이냐면 대부분의 웹서버가 디폴트로 인덱스html을 찾아보도록 설정되어있어 -->
-
-<!DOCTYPE html>/ 이거 자동불러오려면 '! + enter 키 하면 자동완성..ㅎ'
+<!DOCTYPE html>
 <html lang="en">
   <head>
-      <link rel="stylesheet" href="style.css">  // 이거 자동은 'link:css' 하고 엔터키 누르면 불러와짐
+    <link rel="stylesheet" href="css/styles2.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kakaotalk</title>
+    <title>Welcome to Kokoatalk</title>
   </head>
   <body>
-    <div id="status-bar status-bar--orange">
+    <div class="status-bar">
       <div class="status-bar__column">
-         // column이라고 하면 편하겠지만 'status-bar__column'이라고 해야 어느 Column을 가리키는지 알기 편함, 
-                그리고 column 은 일반적이라 다른곳에서 중복될 수 있음 (부모,자식 명칭들어가야 함/ __으로 이어지게 하는데 본인 클래스에 추가되는거면 --로 이음) 
-            이 규칙을 BEM(Block Element Modifier)라고함, 많은 사람들이 적용시키는 규칙, 쉽게 css읽기 위함.
-        <span>No Servicd</span>
-      </div>
-     <!-- todo: wifi img --> 아이콘 추가예정 표시해두는거
-      </svg>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>110%</span>
-        <!-- Battery icon -->
-        <!-- Lightninf Icon -->
-      </div>
-    </div>
-  </body>
-</html>
-
-아이콘을 추가하는 두가지 옵션 
-1.직접 아이콘을 구하는 방법 (직접 이미지를 만들고 추출) 
-
-2. svg파일 이용 - svg: 픽셀이 없는 이미지 파일형식, 수학으로만 구성된형식임. 좌표로 되더있어 원하는 만큼 늘릴수 있음
-니코썜이 많이 쓰는 두가지 소개@!!
--- 1. https://heroicons.dev/ 무료 아이콘 사이트 - 아이콘 검색하고 복붙하면 됨
-<body>
-    <div id="status-bar status-bar--orange">
-      <div class="status-bar__column">
-        <span>No Servicd</span>
-      </div>
-      <svg
-      class="w-6 h-6"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"
-      ></path>
-      </svg>
-    </svg>
-      </svg>
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>110%</span>
-        <!-- Battery icon -->
-        <!-- Lightninf Icon -->
-      </div>
-    </div>
-  </body>
-
--- 2. https://fontawesome.com/ 어썸폰트들이 모여있음
-<body>
-    <div id="status-bar status-bar--orange">
-      <div class="status-bar__column">
-        <span>No Servicd</span>
-      </div>
-      <i class="fas fa-wifi"></i>  // 아이콘 복붙, 하단 스크립트로 키드 설치 후/ i = icon, 아이콘은 자기만의 클래스명이 있어 지우면 작동안함
-      <div class="status-bar__column">
-        <span>18:43</span>
-      </div>
-      <div class="status-bar__column">
-        <span>110%</span>
-        <i class="fas fa-battery-full fa-2x"></i> fa-2x : 크기설정 홈페이지에서 다운받을떄 크기별로 옵션있음 ( 크기를 바꿔주는 class이름)
-        <!-- Lightninf Icon -->
-      </div>
-    </div>
-    <script
-      src="https://kit.fontawesome.com/fc8f8037cb.js"
-      crossorigin="anonymous"
-    ></script>
-    스크립트는 항상 마직막(body테르 닫기직전)에 있어야 함 /변화는 없지만 코드 키트 설치된거임 
-  </body>
-</html>
-
-하단 내용
-<body>
-    <div id="status-bar status-bar--orange">
-      <div class="status-bar__column">
-        <span>No Servicd</span>
+        <span>No Service</span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
@@ -105,28 +17,52 @@
       </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-
     <header class="welcome-header">
-     // header는 엄청 많아서 css에 어떤 헤더를 가리키는지 알려줄 필요가 있음
       <h1 class="welcome-header__title">Welcome to Kokoa clone</h1>
       <p class="welcome-header__text">
-        If you have a Kokoa Account, log in with your email or phone numver.
+        If you have a Kokoa Account, log in with your email or phone number.
       </p>
     </header>
-
-    <form id="login-form">
-      <inout tyoe="text" aria-placeholder="Email or phone number" />
-      <input type="password" placeholder="password" />
-      <input type="suvmit" value="Log In" />
+    <form action="friends.html" method="get" id="login-form">
+      <!-- 이 웰컴 코코아 클론 화면에서 벗어날건데 그 전에,
+          form의 중요한 2가지 속성을 볼거임
+        1. action: 어떤 페이지로 data를 보낼건지 지정할 수 있음/ 
+          쌤은 data를 새로 만드는 파일로 보낼거임 ( 아직 만들어지지 않은 friends.html 로)
+        2.method ; 2가지 방식중 하나를 쓸수있음
+         - POST : 백엔드서버에 정보를전송하는 방식, 우리는 서버를 갖고 있지 않아 이 프로젝트에서는 사용할 수 없음 
+         - GET : 보안에 취약하여 username, password를 GET방식으로 보내면 안됨/URL에 포함되어도 상관없는 정보들을 보내야함
+            아이디, 비번 넣고 login누르면 friends.html에 적은 내용이 보이고, 
+            새로 열린 페이지 url보면 폴더이름이랑 thml 이름 써있고, 화면 form에 아이디 비번 작성했던게 그 다음에 보임
+         so, 구글에서 서울 검색하면 url에도 서울이 있는데 그걸 감자로 바꾸면 검색한 화면도 감자로 바뀜..ㄷ-->
+      <input
+        name="username"
+        type="text"
+        required
+        placeholder="Email or phone number"
+      />
+      <!-- (required는 칸에 누락되어있다면 적으라고 메세지뜸) -->
+      <input name="password" type="password" placeholder="password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
       <a href="#">Find Kokoa Account or Password</a>
     </form>
+
+    <div id="no-mobile">
+      <!-- 핸드폰화면에서만 볼수있게 할거임 -->
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
+
+    <div id="landscape-phone">
+      <span>Please flip your phone :(</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/fc8f8037cb.js"
       crossorigin="anonymous"
     ></script>
   </body>
+</html>
