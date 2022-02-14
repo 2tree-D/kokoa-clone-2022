@@ -212,7 +212,7 @@
 .reply input:focus-within {
   /* 부모지정, .reply 안써주면 다른페이지의 input에 모두 적용되어 이상해짐... */
   width: 97vw;
-  transform: translateX(-11%) translateY(-80px);
+  transform: translateX(-13%) translateY(-80px);
 }
 .reply:focus-within {
   transform: translateY(80px);
